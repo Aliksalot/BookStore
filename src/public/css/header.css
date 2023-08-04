@@ -1,0 +1,80 @@
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: aquamarine;
+    background-image: url('../images/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.search-box {
+    left: 40px;
+    top: 35px;
+    position: fixed;
+
+}
+
+.search-button {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.search-input {
+    height: 30px;
+    width: 160px;
+    position: relative;
+}
+
+.logo-box{
+    top: 10%;
+    left: 40%;
+    width: 80px;
+    height: 80px;
+    display: block;
+    position: relative;
+}
+
+.logo-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.site-label {
+    position: relative;
+    left: 83px;
+    width: fit-content;
+    top: -85px;
+    color:black;
+}
+
+.func-buttons {
+    left: 88%;
+    position: fixed;
+    width: 120px;
+    top: 32.5px;
+    height: 40px;
+}
+
+.account-button{
+    width: 40%;
+    position: relative;
+    height: 100%;
+    background-image: url('../images/account.png');
+    background-size: cover;
+    cursor: pointer;
+    background-position: center;
+}
+
+.cart-button{
+    width: 40%;
+    position: relative;
+    height: 100%;
+    background-image: url('../images/shopping-cart.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
