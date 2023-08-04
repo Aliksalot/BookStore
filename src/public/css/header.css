@@ -6,6 +6,7 @@
     background-image: url('../images/header-background.jpg');
     background-size: cover;
     background-position: center;
+    z-index: 999;
 }
 
 .search-box {
@@ -63,7 +64,7 @@
     width: 40%;
     position: relative;
     height: 100%;
-    background-image: url('../images/account.png');
+    background-image: url('../images/account.jpg');
     background-size: cover;
     cursor: pointer;
     background-position: center;

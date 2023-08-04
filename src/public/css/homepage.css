@@ -3,3 +3,70 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+.main {
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    top:120px;
+    left: 30%;
+    background-image: url('../images/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.book-section {
+    background-color: white;
+    width: 80%;
+    height: 100px;
+    left: 10%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.book-title {
+    width: 70%;
+    position: relative;
+    top: -80px;
+    left: 24%;
+    overflow: hidden;
+}
+
+.add-to-cart {
+    position: absolute;
+    left: 85%;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    z-index: 999;
+    background-image: url('../images/shopping-cart.png');
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+.book-image {
+    background-color: red;
+    background-size: contain;
+    background-position: center;
+    width: 20%;
+    height: 90%;
+    position: relative;
+    top: 5%;
+    left: 3%;
+}
+
+.genre-author-p {
+    position: relative;
+    width: 50%;
+    top: -70px;
+    left: 24%;
+    overflow: hidden;
+}
+
+.price-span {
+    left: 85%;
+    position: relative;
+    top: -103px;
+
+}
