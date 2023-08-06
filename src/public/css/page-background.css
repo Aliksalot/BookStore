@@ -1,0 +1,16 @@
+body {
+    background-image: url('../images/site-background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.main {
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    top:120px;
+    left: 30%;
+    background-image: url('../images/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+}

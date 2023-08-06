@@ -1,0 +1,78 @@
+.book-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: 5%;
+    top: 3%;
+    width: 35%;
+    height: 35%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.book-title {
+    position: relative;
+    top: -36%;
+    left: 42%;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.genre-author-section{
+    position: absolute;
+    left: 41%;
+    height: 5%;
+    top: 8%;
+    width: 50%;
+}
+
+.book-genre-author-p {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.description {
+    position: relative;
+    left:5%;
+    white-space: normal;
+    background-color: white;
+    height: fit-content;
+    width: 90%;   
+    word-wrap: break-word;
+}
+
+.purchase-section {
+    background-color: black;
+    position: relative;
+    
+    width: 90%;
+    left: 5%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.book-price {
+    position: relative;
+    background-color: whitesmoke;
+    margin-right: 3%;
+    width: 30%;
+    height: fit-content;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+
+.add-to-cart {
+    width: 40px;
+    height: 40px;
+    
+    background-image: url('../images/shopping-cart.png');
+    background-position: center;
+    background-size: cover;
+}
