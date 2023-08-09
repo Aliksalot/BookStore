@@ -1,5 +1,7 @@
 .book-section {
-    background-color: white;
+    background-image: url('../images/book-section-background');
+    background-position: center;
+    background-size: cover;
     width: 80%;
     height: 100px;
     left: 10%;

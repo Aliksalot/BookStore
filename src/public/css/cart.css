@@ -1,0 +1,42 @@
+.buy-button {
+    border: 0px;
+    border-radius: 8px;
+    background-color: green;
+    height: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.buy-button:hover {
+    background-color: darkgreen;
+    outline: none;
+}
+
+.add-to-cart:hover{
+    outline: none;
+    background-color: lightgray;
+}
+
+.delete-button {
+    border: 0px;
+    border-radius: 8px;
+    height: 25px;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f; 
+    outline: none;
+}
+
+.delete-button:focus {
+    box-shadow: 0 0 5px #f44336;
+}
+
+.finish-section {
+    position: relative;
+    top: 4%;
+    left: 50%
+}

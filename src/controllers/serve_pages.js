@@ -11,12 +11,12 @@ const serveHeader = (req, res) => {
     res.sendFile(path.join(__dirname, '../public/html/header.html'))
 }
 
-const serveBookTemp = (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/html/book.html'))
+const serveCart = (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/html/cart.html'))
 }
 
-router.get('/book', serveBookTemp)
 router.get('/home', serveHome)
 router.get('/header', serveHeader)
+router.get('/cart', serveCart)
 
 module.exports = router

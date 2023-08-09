@@ -12,15 +12,15 @@
         <div id="header-placeholder"></div>
         
     </head>
-    <body onload="load_header()">-
+    <body onload="load_header(); loadAllBooks()">-
 
         <div class="main">
-            <section class="book-section">
-                <a href="" class=""><img src="" alt="" class="book-image"></a>
-                <p class="book-title">adjasoodsao book tittle lmao</p>
+            <section class="book-section" style = 'display:none'>
+                <a name = 'book-link' href="" class=""><img src="" name ='image' alt="" class="book-image"></a>
+                <p class="book-title" name = 'title'>adjasoodsao book tittle lmao</p>
                 <button class="add-to-cart"></button>
-                <p class="genre-author-p">asdsddddddddddddddddddddddddddddddddddddddddddddddsa</p>
-                <span class="price-span">125</span>
+                <p class="genre-author-p" name = 'genre-author'>asdsddddddddddddddddddddddddddddddddddddddddddddddsa</p>
+                <span class="price-span" name = 'price'>125</span>
             </section>
         </div>
 
@@ -37,3 +37,6 @@
 </html>
 
 <script src = '../js/load_header.js'></script>
+<script src = '../js/redirect_for_header.js'></script>
+<script src = '../js/home/loadAllBooks.js'></script>
+<script src = '../js/request.js'></script>

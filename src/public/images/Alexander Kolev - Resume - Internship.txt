@@ -1,0 +1,70 @@
+Alexander Kolev
+Internship
+
+Sofia
+08968774444
+
+I am an young hardworking and enthusiastic High School student, deeply committed in the field of Computer Science and Mathematics with valuable programming that I hope to build upon in your company.
+
+PERSONAL INFORMATION
+  Address: , Sofia, 
+  Nationality: 
+  Driving License: 
+  Hobbies: Competitive Rubik's Cube solving; Hiking; Cycling; Swimming; Algorithmic Programming; Calculus
+
+SOCIAL PROFILES
+  * My GitHub: https://github.com/Aliksalot
+
+LANGUAGES
+  ★★★★★ Bulgarian
+  ★★★☆☆ English
+
+SKILLS
+  ★★★☆☆ Multitasking Skills
+  ★★★★☆ Strong Mathematical Skills
+  ★★★☆☆ Honesty and Integrity
+  ★★★★☆ Motivated Attitude
+  ★★★☆☆ Teamwork Skills
+
+WORK EXPERIENCE
+  * July 2021 – September 2022
+    QA Manual Testing at ZEN Electronics, Sofia
+      Wrote and executed  manual tests for the software of the company to assure the quality of the product and find areas for improvement, giving me the opportunity to understand the importance of testing.
+Installed different OS on different computers with diverse hardware to observe the change in the behavior of the software, allowing me to give feedback on how the UX changes with the OS.
+Was very involved in the hardware of the computers, which gave me a better understanding of the way our software works, allowing me to contribute more to the team's work.
+*I worked on this position in the same company for the summers of 2021 and 2022 as a summer job.
+
+
+EDUCATION
+  * September 2020 – Present
+    Sofia Professional Gymanisum of Electronics, "John Atanasoff", Sofia High School Degree
+
+    Will be graduating in 2025 with a focus on Java development, reflecting a forward-thinking approach and commitment to building a strong foundation in programming.
+  * 
+    ,  
+
+INTERNSHIPS
+  * July 2023 – July 2023
+    Role of a Project Manager at Nemetschek Bulgaria, Sofia
+
+    For a two week period participated in building a full stack web application in a team of eight, which was one of my most impacting programming en devours. At this position I improved my teamwork and technical skills. 
+Took the role of managing the team communication and distributing the tasks, making sure everyone is one the same page, so that the work can be done fast and efficient.
+
+
+COURSES
+  * October 2017 – May 2018
+    JavaScript/HTML, Telerik Academy
+  * August 2022 – August 2022
+    Week-Long Competive Programming JavaScript and C/C++, Telerik Academy
+
+TECHNICAL SKILLS
+  * Programming Languages:, , 
+
+    Very Good Level: Java, JavaScript, HTML, CSS, C#
+Intermediate Level: C/C++, Python, SQL, Batch, 
+Basic: Lua, TypeScript
+  * Technologies:, , 
+
+    Very Good Level: Git; GitHub; MongoDB; NodeJS; Linux
+Intermediate: Jira; Confluence; SMSS; MySQL; Java Swing;
+Basic: pygame
