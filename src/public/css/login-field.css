@@ -1,0 +1,28 @@
+.field{
+    position: absolute;
+    left:37%;
+    top: 200px;
+    width: 350px;
+    height: 250px;
+    justify-self: center;
+    background-image: url('../images/book-section-background');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.inputs{
+    position: relative;
+    left: 80px;
+    top: 20px;
+}
+
+.login-button{
+    position: absolute;
+    left: 215px;
+    top: 170px;
+}
+
+.login-result{
+    display: none;
+}

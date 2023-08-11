@@ -21,6 +21,7 @@
     width: 60px;
     height: 30px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .search-input {

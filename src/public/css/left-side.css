@@ -8,6 +8,8 @@
     background-size: cover;
     background-position: center;
     white-space: pre-line;
+    
+    display: none;
 }
 
 .sort-type-button {

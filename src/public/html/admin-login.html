@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' type = 'text/css', href = '../css/page-background.css'>
+    <link rel = 'stylesheet' type = 'text/css', href = '../css/header.css'>
+    <link rel = 'stylesheet' type = 'text/css', href = '../css/book.css'>
+    <link rel = 'stylesheet' type = 'text/css', href = '../css/login-field.css'>
+
+    <div id="header-placeholder"></div>
+    <title>Login</title>
+</head>
+<body onload = "load_header()">
+    <div class="field">
+        <div class="inputs">
+            <p class="admin-username-text">Admin Username:</p>
+            <input id = 'user' type="text" class="admin-username-input" placeholder="Enter Username">
+            <p class="admin-username-pass">Admin Password:</p>
+            <input id = 'pass' type="text" class="admin-pass-input" placeholder="Enter Password">
+            <p id = 'login-result' class="login-result">Wrong password</p>
+        </div>
+        <button class="login-button" onclick = 'attempt_login()'>Login</button>
+    </div>
+</body>
+</html>
+
+<script src = '../js/load_header.js'></script>
+<script src="../js/admin/login.js"></script>
+<script src="../js/request.js"></script>
