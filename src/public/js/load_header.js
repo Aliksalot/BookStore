@@ -4,7 +4,7 @@ const load_header = () => {
     xhr.open('GET','/header')
     xhr.setRequestHeader('Content-type', 'application/json')
     xhr.onload = () => {
-        if(xhr.status == 200){            
+        if(xhr.status == 200){           
             header.innerHTML = xhr.responseText
         }
     }

@@ -17,7 +17,7 @@
             <p class="admin-username-text">Admin Username:</p>
             <input id = 'user' type="text" class="admin-username-input" placeholder="Enter Username">
             <p class="admin-username-pass">Admin Password:</p>
-            <input id = 'pass' type="text" class="admin-pass-input" placeholder="Enter Password">
+            <input id = 'pass' type="password" class="admin-pass-input" placeholder="Enter Password">
             <p id = 'login-result' class="login-result">Wrong password</p>
         </div>
         <button class="login-button" onclick = 'attempt_login()'>Login</button>
@@ -28,3 +28,10 @@
 <script src = '../js/load_header.js'></script>
 <script src="../js/admin/login.js"></script>
 <script src="../js/request.js"></script>
+<script>
+    document.getElementById('pass').addEventListener('keyup', (event) => {
+        if(event.key === 'Enter'){
+            attempt_login();
+        }
+    })
+</script>

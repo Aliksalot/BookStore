@@ -9,7 +9,6 @@ const getAllBooks = (req, res) => {
     bookServices.getBooks().then(books => {
         res.send(books)
     })
-    
 }
 
 router.get('/getAllBooks', getAllBooks)

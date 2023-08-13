@@ -1,6 +1,12 @@
-
 const express = require('express')
 const app = express()
+
+const session = require('express-session')
+app.use(session({
+    secret: 'IAmASecretKey',
+    resave: false,
+    saveUninitialized: true,
+}))
 
 const path = require('path')
 
@@ -18,6 +24,9 @@ app.use('/home/', home_controller)
 
 const book_controller = require('./src/controllers/BookController')
 app.use('/book/', book_controller)
+
+const admin_controller = require('./src/controllers/AdminController')
+app.use('/admin/', admin_controller)
 
 app.listen(port, () => {
     console.log(`Server starting on ${port}`)

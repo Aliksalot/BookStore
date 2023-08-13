@@ -4,7 +4,7 @@ const attempt_login = async() => {
     const user = user_field.value;
     const pass = pass_field.value;
 
-    const success = await post('/admin/login_attempt', {username: user, password: pass})
+    const success = await post('/admin/login_attempt', JSON.stringify({username: user, password: pass}))
 
     if(success){
         window.location.href = '/admin'

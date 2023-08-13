@@ -8,7 +8,7 @@ const get = async(url, body) => {
 }
 
 const post = async(url, body, contentHeader) => {
-    const response = await fetch(url, {method: 'POST', body: body});
+    const response = await fetch(url, {method: 'POST', body: body, headers: {'Content-Type': 'application/json'}});
     if(response.ok){
         return response.json();
     }
