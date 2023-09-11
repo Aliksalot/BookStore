@@ -18,6 +18,9 @@ const serveCart = (req, res) => {
 }
 
 const serveLogin = (req, res) => {
+    if(req.session.isAdmin){
+        res.redirect('/admin')
+    }
     res.sendFile(path.join(__dirname, '../public/html/admin-login.html'))
 }
 

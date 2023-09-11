@@ -21,6 +21,8 @@
     position: absolute;
     left: 215px;
     top: 170px;
+
+    cursor: pointer;
 }
 
 .login-result{

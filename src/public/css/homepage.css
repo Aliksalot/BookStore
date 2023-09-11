@@ -38,6 +38,8 @@
     width: 20%;
     height: 90%;
     position: relative;
+    background-color: whitesmoke;
+    border-radius: 5px;
     top: 5%;
     left: 3%;
 }

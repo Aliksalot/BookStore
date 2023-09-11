@@ -9,6 +9,9 @@
     <link rel="stylesheet" type = 'text/css' href="../css/admin-book.css">
     <title>Admin</title>
     <div id = 'header-placeholder'></div>
+
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 </head>
 <body onload = 'load_header()'>
     
@@ -17,10 +20,17 @@
         <button class="new-admin-button">New Administrator</button>    
 
         <section class="book">
-            Meow
+            <h1 class = 'title' name="title">Title</h1>
+            <a href="" class = 'redirect' name = 'edit-link'><img class = "image" src="" alt="" name = "image"></a>       
+            <button class = 'delete'>Delete</button>            
+            <button class = 'edit'>Edit</button>            
+            <h2 class = 'author' name = 'author'>Author</h2>
+            <h2 name = 'genre' class = 'genre'>Genre</h2>
         </section>
+
     </div>
 </body>
 </html>
 
 <script src="../js/load_header.js"></script>
+<script src="../js/redirect_for_header.js"></script>

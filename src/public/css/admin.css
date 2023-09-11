@@ -2,6 +2,8 @@
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 25px;
+
+    cursor: pointer;
 }
 
 .new-admin-button{
@@ -10,4 +12,6 @@
     margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 25px;
+
+    cursor: pointer;
 }
