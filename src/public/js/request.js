@@ -7,8 +7,8 @@ const get = async(url, body) => {
     console.log('oopsies')
 }
 
-const post = async(url, body, contentHeader) => {
-    const response = await fetch(url, {method: 'POST', body: body, headers: {'Content-Type': 'application/json'}});
+const post = async(url, body) => {
+    const response = await fetch(url, {method: 'POST', body: JSON.stringify(body), headers: {'Content-Type': 'application/json'}});
     if(response.ok){
         return response.json();
     }

@@ -1,0 +1,13 @@
+.new-book-button{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+
+.new-admin-button{
+    float: right;
+    
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+}

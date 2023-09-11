@@ -1,11 +1,4 @@
-
-
 const collectionName = 'books'
-
-const con = async() => {
-    const {getCollection} = require("./createClient")
-    return getCollection(collectionName)
-}
 
 const {getCollection} = require("./createClient")
 

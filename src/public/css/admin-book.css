@@ -1,0 +1,12 @@
+
+.book{
+    margin-left:50px;
+    width: 400px;
+    height: 150px;
+    background-image: url('../images/book-section-background');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+}
+
+

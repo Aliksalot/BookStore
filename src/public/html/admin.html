@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' type = 'text/css', href = '../css/page-background.css'>
+    <link rel = 'stylesheet' type = 'text/css', href = '../css/header.css'>
+    <link rel="stylesheet" type = 'text/css' href="../css/admin.css">
+    <link rel="stylesheet" type = 'text/css' href="../css/admin-book.css">
     <title>Admin</title>
+    <div id = 'header-placeholder'></div>
 </head>
-<body>
-    Hello admin
+<body onload = 'load_header()'>
+    
+    <div class="main">
+        <button type="button" class="new-book-button">New Book</button>
+        <button class="new-admin-button">New Administrator</button>    
+
+        <section class="book">
+            Meow
+        </section>
+    </div>
 </body>
 </html>
+
+<script src="../js/load_header.js"></script>

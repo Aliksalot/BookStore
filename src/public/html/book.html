@@ -12,23 +12,26 @@
     <title>Document</title>
 
 </head>
-<body onload = 'load_header()'>
+<body onload = 'load_header(); loadBook();'>
     <div class = 'main'>
-        <img src="../images/account.jpg" alt="book-image" class="book-image"></img>
-        <h1 class="book-title">Title</h1>
-        <section class="genre-author-section">
-            <p id = 'author' class="book-genre-author-p">Author: </p>
-            <p id = 'genre' class="book-genre-author-p">Genre: </p>
-        </section>
+        <div class="content">
+            <img id = 'book-image' src="../images/account.jpg" alt="book-image" class="book-image"></img>
+            <h1 id = "book-title" class="book-title">Title</h1>
+            <section id = "genre-author-section" class="genre-author-section">
+                <p id = 'author' class="book-genre-author-p">Author: </p>
+                <p id = 'genre' class="book-genre-author-p">Genre: </p>
+            </section>
 
-        <p class="description">
-            asdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        </p>
+            <p id = 'description' class="description">
+                asdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            </p>
 
-        <section class="purchase-section">
-            <span class="book-price">Price: </span>
-            <button class="add-to-cart"></button>
-        </section>
+            <section class="purchase-section">
+                <span id = 'price' class="book-price">Price: </span>
+                <button class="add-to-cart"></button>
+            </section>
+        </div>
+        
     </div>
 
 </body>
@@ -36,3 +39,5 @@
 
 <script src = '../js/load_header.js'></script>
 <script src = '../js/redirect_for_header.js'></script>
+<script src="../js/book/load_book.js"></script>
+<script src="../js/request.js"></script>
