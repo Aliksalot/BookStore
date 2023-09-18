@@ -1,7 +1,12 @@
-const loadAllBooks = async() => {
+const loadAllBooks = async(books) => {
+
+    if(books === undefined){
+        books = await get('/home/getAllBooks')
+    }
+    
     const bookNode = document.querySelector("[class=book-section]")
     const main = document.querySelector('[class=main]')
-    const books = await get('/home/getAllBooks')
+    
 
     books.forEach(book => {
         const bookNodeClone = bookNode.cloneNode(true)
