@@ -20,9 +20,11 @@
 
     border-radius: 15px;
 
+    background-color: white;
+
     position: relative;
     left: 10px;
-    top: -36px;
+    top: -30px;
 }
 
 .title{

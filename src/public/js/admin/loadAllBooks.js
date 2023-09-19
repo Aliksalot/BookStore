@@ -41,6 +41,7 @@ const loadAllBooks = async(books) => {
         getPropertyByName('genre').textContent = book.genre === undefined ? 'genre' : book.genre
         getPropertyByName('qty').textContent += book.quantity === undefined ? '0' : book.quantity
         getPropertyByName('price').textContent += book.price === undefined ? '0.00' : book.price
+        getPropertyByName('edit-link').href = `/book/${book.name}`
 
         bookNodeClone.style.display = 'block'
         books_section.appendChild(bookNodeClone)
