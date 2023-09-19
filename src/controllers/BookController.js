@@ -13,10 +13,11 @@ const serveBookPage = (req, res) => {
 
 const getBookData = async(req, res) => {
     const name = req.params.book_name
+    console.log(`requesting book title: ${name}`)
     const books = await bookServices.getBooks({name: name})
     const book = books[0]
     console.log(book)
-    res.send(book)
+    res.send(book === undefined ? {} : book)
 }
 
 router.get('/:book_name', serveBookPage)

@@ -7,6 +7,7 @@ const loadAllBooks = async(books) => {
     const bookNode = document.querySelector("[class=book-section]")
     const main = document.querySelector('[class=main]')
     
+    main.innerHTML = ''
 
     books.forEach(book => {
         const bookNodeClone = bookNode.cloneNode(true)
@@ -21,5 +22,24 @@ const loadAllBooks = async(books) => {
         bookNodeClone.style.display = 'block'
         main.appendChild(bookNodeClone)
     });
-     
+    
+    const noBookElement = () => {
+        const p = document.createElement('p')
+        p.textContent = 'There is no such book / There are no books'
+        p.style.color = 'white'
+        p.style.fontSize = 'large'
+        p.style.textAlign = 'center'
+
+        return p;
+    }
+
+    if(main.innerHTML === ''){
+        main.appendChild(noBookElement())
+        bookNode.style.display = 'none'
+        main.appendChild(bookNode)
+    }
+
+
+ 
+
 }

@@ -1,9 +1,23 @@
-const searchForTitle = () => {
+const searchForTitle = async() => {
     const searchBar = document.getElementById('search');
-    const query = searchBar.value
+    let query = searchBar.value
 
     if (searchBar.value === undefined) return;
 
-    const books = await 
+    query = query.trim();
+    
+    if(query === '*'){
+        loadAllBooks()
+        searchBar.value = ''
+        return;
+    }
+
+    const books = await get(`/book/getBookData/${query}`);
+
+    console.log(books === {}, books)
+
+    loadAllBooks(!books ? [] : [books])
+    
+    searchBar.value = ''
 
 }
