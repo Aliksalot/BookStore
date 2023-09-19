@@ -6,3 +6,14 @@ const redirect_to_cart = () => {
 const redirect_to_login = () => {
     window.location.href = '/login'
 }
+
+const enterForSearch = () => {
+     document.getElementById('search').addEventListener('keypress', (event) => {
+        if(event.key === 'Enter'){
+            searchForTitle()
+        }
+    })
+}
+
+
+

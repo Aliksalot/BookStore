@@ -14,10 +14,10 @@ const searchForTitle = async() => {
 
     const books = await get(`/book/getBookData/${query}`);
 
-    console.log(books === {}, books)
-
-    loadAllBooks(!books ? [] : [books])
+    console.log(books)
     
+    loadAllBooks(Object.keys(books).length === 0 ? [] : [books])
+
     searchBar.value = ''
 
 }

@@ -6,6 +6,7 @@ const load_header = () => {
     xhr.onload = () => {
         if(xhr.status == 200){           
             header.innerHTML = xhr.responseText
+            enterForSearch()
         }
     }
     xhr.send()

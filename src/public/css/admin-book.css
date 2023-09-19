@@ -10,10 +10,11 @@
     background-size: cover;
     margin-bottom: 25px;
     border-radius: 10px;
+
+    display: none;
 }
 
 .image{
-    background-color: red;
     width: 110px;
     height: 130px;
 
@@ -88,4 +89,21 @@
 
 .edit:hover{
     background-color: lightgray;
+}
+
+
+.price{
+    position: relative;
+    font-size: medium;
+    z-index: 999;
+    top: -190px;
+    left: 290px;
+}
+
+.qty{
+    position: relative;
+    font-size: medium;
+    z-index: 999;
+    top: -180px;
+    left: 290px;
 }

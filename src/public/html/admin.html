@@ -13,7 +13,7 @@
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 </head>
-<body onload = 'load_header()'>
+<body onload = 'load_header(); loadAllBooks()'>
     
     <div class="main">
         <button type="button" class="new-book-button">New Book</button>
@@ -23,14 +23,22 @@
             <h1 class = 'title' name="title">Title</h1>
             <a href="" class = 'redirect' name = 'edit-link'><img class = "image" src="" alt="" name = "image"></a>       
             <button class = 'delete'>Delete</button>            
-            <button class = 'edit'>Edit</button>            
+            <button class = 'edit'>Edit</button>     
             <h2 class = 'author' name = 'author'>Author</h2>
             <h2 name = 'genre' class = 'genre'>Genre</h2>
+            <h2 name = 'qty' class = 'qty'>Qty: </h2>
+            <h2 name = 'price' class = 'price'>Price: </h2>
         </section>
 
+        <section class = 'books'> 
+
+        </section>
     </div>
 </body>
 </html>
 
 <script src="../js/load_header.js"></script>
 <script src="../js/redirect_for_header.js"></script>
+<script src="../js/request.js"></script>
+<script src="../js/admin/loadAllBooks.js"></script>
+<script src="../js/search_book.js"></script>
