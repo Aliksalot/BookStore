@@ -11,6 +11,8 @@ function changeToAdmin(req){
     req.session.isAdmin = true;
 }
 
+
+
 module.exports = {
     checkIsAdmin,
     changeToAdmin

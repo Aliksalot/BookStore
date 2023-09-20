@@ -4,6 +4,7 @@ const path = require('path')
 const bodyParser = require('body-parser')
 
 const adminServices = require('../services/adminServices')
+const bookServices = require('../services/bookServices')
 
 router.use(bodyParser.json())
 
@@ -22,6 +23,7 @@ const loginAttempt = async(req, res) => {
 }
 
 
+
 router.post('/login_attempt', loginAttempt)
 
 router.use(checkIsAdmin);
@@ -35,6 +37,19 @@ const newUserAttempt = async(req, res) => {
     res.send(JSON.stringify(success))
 }
 
+const newBook = async(req, res) => {
+    const book = req.body
+    console.log('request for new book: ' + book)
+    await bookServices.addBook(book)
+    res.send(true)
+}
+
+const serveNewBook = async(req, res) => {
+    res.sendFile(path.join(__dirname, '../public/html/new-book.html'))
+}
+
 router.post('/new_user_attempt', newUserAttempt)
+router.get('/new-book', serveNewBook)
+router.post('/new-book-data', newBook)
 
 module.exports = router

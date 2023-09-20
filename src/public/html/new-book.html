@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' type = 'text/css', href = '../css/page-background.css'>
+    <link rel = 'stylesheet' type = 'text/css', href = '../css/header.css'>
+    <link rel = 'stylesheet' type = 'text/css', href = '../css/new-book.css'>
+
+    <div id="header-placeholder"></div>
+    <title>New Book</title>
+
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body onload = 'load_header(); loadBook();'>
+    <div class = 'main'>
+        <div class="content">
+            <div id = 'book-image' alt="book-image" class="book-image"><input type="file" id = 'image-input'></div>
+
+            <input type="text" id = "book-title" class="book-title" placeholder="Enter title">
+            <section id = "genre-author-section" class="genre-author-section">
+                <input type="text" id = 'author' class = 'book-genre-author-p' placeholder="Enter Author">
+                <input type = 'text' id = 'genre' class="book-genre-author-p" placeholder="Genre">
+            </section>
+
+            <input id = 'description' class="description" placeholder="Enter description">
+            
+            <section class="purchase-section">
+                <input type = 'number' min = '1' step = '1' id = 'qty' class="book-qty" placeholder = 'Enter quantity'>
+                <input type = 'number' min = '1' step = '0.01' id = 'price' class="book-price" placeholder = 'Enter price'>
+                <button class="save" onclick = 'newBook()'></button>
+            </section>
+        </div>
+        
+    </div>
+
+</body>
+</html>
+
+<script src = '../js/load_header.js'></script>
+<script src = '../js/redirect_for_header.js'></script>
+<script src="../js/request.js"></script>
+<script src="../js/admin/image-preview.js"></script>
+<script src="../js/admin/new-book.js"></script>

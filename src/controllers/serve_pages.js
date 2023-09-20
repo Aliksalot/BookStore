@@ -28,6 +28,7 @@ const serveAdmin = (req, res) => {
     res.sendFile(path.join(__dirname, '../public/html/admin.html'))
 }
 
+
 router.get('/home', serveHome)
 router.get('/header', serveHeader)
 router.get('/cart', serveCart)
