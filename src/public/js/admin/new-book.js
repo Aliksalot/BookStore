@@ -24,4 +24,5 @@ const newBook = async() => {
 
     //redirect and show pop-up
     console.log('Rabotim')
+    window.location.href = '/admin'
 }

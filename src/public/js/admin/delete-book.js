@@ -1,6 +1,11 @@
-const deleteBook = async() => {
+const deleteBook = async(button) => {
 
-    
+    const bookDiv = button.parentElement
+    const book_title = bookDiv.querySelector("[class=title]").textContent
 
-    await post('/admin/delete-book')
+    console.log(book_title)
+
+    await post('/admin/delete-book', {title: book_title})
+
+    loadAllBooks()
 }

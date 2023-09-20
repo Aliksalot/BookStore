@@ -44,6 +44,13 @@ const newBook = async(req, res) => {
     res.send(true)
 }
 
+const deleteBook = async(req, res) => {
+    const book_title = req.body.title
+    console.log('Requested book to delete: ' + book_title)
+    await bookServices.deleteBook(book_title)
+    res.send(true)
+}
+
 const serveNewBook = async(req, res) => {
     res.sendFile(path.join(__dirname, '../public/html/new-book.html'))
 }
@@ -51,5 +58,6 @@ const serveNewBook = async(req, res) => {
 router.post('/new_user_attempt', newUserAttempt)
 router.get('/new-book', serveNewBook)
 router.post('/new-book-data', newBook)
+router.post('/delete-book', deleteBook)
 
 module.exports = router
