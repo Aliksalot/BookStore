@@ -6,6 +6,10 @@ const bodyParser = require('body-parser')
 const adminServices = require('../services/adminServices')
 const bookServices = require('../services/bookServices')
 
+const multer = require('multer')
+
+const upload = multer({dest: 'uploads/'})
+
 router.use(bodyParser.json())
 
 const {checkIsAdmin, changeToAdmin} = require('./AdminAuth')
@@ -38,8 +42,9 @@ const newUserAttempt = async(req, res) => {
 }
 
 const newBook = async(req, res) => {
-    const book = req.body
-    console.log('request for new book: ' + book)
+    const book = req.body.title
+    const file = req.file
+    console.log('request for new book: ', book, JSON.stringify(file))
     await bookServices.addBook(book)
     res.send(true)
 }
@@ -56,7 +61,7 @@ const serveNewBook = async(req, res) => {
 }
 
 router.post('/new_user_attempt', newUserAttempt)
-router.get('/new-book', serveNewBook)
+router.get('/new-book', upload.single('image'), serveNewBook)
 router.post('/new-book-data', newBook)
 router.post('/delete-book', deleteBook)
 
