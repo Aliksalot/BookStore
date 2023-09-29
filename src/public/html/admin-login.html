@@ -18,9 +18,10 @@
     <div class="field">
         <div class="inputs">
             <p class="admin-username-text">Admin Username:</p>
-            <input id = 'user' type="text" class="admin-username-input" placeholder="Enter Username">
+            <!--values are set to admin login for debugging, remove before prod lol-->
+            <input id = 'user' type="text" class="admin-username-input" placeholder="Enter Username" value = 'admin'>
             <p class="admin-username-pass">Admin Password:</p>
-            <input id = 'pass' type="password" class="admin-pass-input" placeholder="Enter Password">
+            <input id = 'pass' type="password" class="admin-pass-input" placeholder="Enter Password" value = 'changeit'>
             <p id = 'login-result' class="login-result">Wrong password</p>
         </div>
         <button class="login-button" onclick = 'attempt_login()'>Login</button>

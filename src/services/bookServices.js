@@ -31,7 +31,7 @@ const getBooks = async(filter) => {
 
 
 
-//PROBLEMA E CHE QTY V BAZATA DANNI SE PAZI KATO STRING
+
 const changeQuantity = async(book, change) => {
     const collection = await getCollection(collectionName)
     const bookOld = await collection.findOne({name: book.name})
