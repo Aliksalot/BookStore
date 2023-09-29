@@ -41,7 +41,7 @@ const loadAllBooks = async(books) => {
         getPropertyByName('image').src = (book.image_name === undefined ? "../images/book-stock-icon" : '/book/book-icons/' + book.image_name)
         getPropertyByName('author').textContent = book.author
         getPropertyByName('genre').textContent = book.genre === undefined ? 'genre' : book.genre
-        getPropertyByName('qty').textContent += book.quantity === undefined ? '0' : book.quantity
+        getPropertyByName('qty').textContent += book.qty === undefined ? '0' : book.qty
         getPropertyByName('price').textContent += book.price === undefined ? '0.00' : book.price
         getPropertyByName('edit-link').href = `/book/${book.name}`
 
