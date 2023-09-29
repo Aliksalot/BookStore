@@ -1,3 +1,6 @@
+
+let last_img = `url(../images/book-stock-icon)`;
+
 const imagePreview = () => {
         const imageInput = document.getElementById('image-input');
         const imageDiv = document.getElementById('book-image');
@@ -11,7 +14,11 @@ const imagePreview = () => {
                 // Read the selected file as a data URL and display it in the image preview
                 reader.onload = function (e) {
                     const imageUrl = e.target.result;
-                    imageDiv.style.backgroundImage = `url(${imageUrl})`
+                    imageDiv.style.backgroundImage = imageUrl === undefined ? last_img : `url(${imageUrl})`
+                    console.log('url', imageUrl)
+                    if(imageUrl !== undefined){
+                        last_img = `url(${imageUrl})`
+                    }
                 };
 
                 reader.readAsDataURL(imageInput.files[0]);

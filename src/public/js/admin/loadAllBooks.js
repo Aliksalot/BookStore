@@ -35,14 +35,16 @@ const loadAllBooks = async(books) => {
             return bookNodeClone.querySelector(`[name=${name}]`)
         }
 
+        console.log(book)
+
         getPropertyByName('title').textContent = book.name
-        getPropertyByName('image').src = (book.image === undefined ? "../images/book-stock-icon" : book.image)
+        getPropertyByName('image').src = (book.image_name === undefined ? "../images/book-stock-icon" : '/book/book-icons/' + book.image_name)
         getPropertyByName('author').textContent = book.author
         getPropertyByName('genre').textContent = book.genre === undefined ? 'genre' : book.genre
         getPropertyByName('qty').textContent += book.quantity === undefined ? '0' : book.quantity
         getPropertyByName('price').textContent += book.price === undefined ? '0.00' : book.price
         getPropertyByName('edit-link').href = `/book/${book.name}`
-        
+
         bookNodeClone.id = book.name 
 
         bookNodeClone.style.display = 'block'

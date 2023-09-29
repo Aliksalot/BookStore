@@ -20,7 +20,17 @@ const getBookData = async(req, res) => {
     res.send(book === undefined ? {} : book)
 }
 
+const sendImage = async(req, res) => {
+    const imageName = req.params.image_name;
+    console.log('request for image: ', imageName)
+    const pathToImage = `.../uploads/${imageName}`
+    console.log(pathToImage)
+    res.sendFile(pathToImage)
+}
+
+
 router.get('/:book_name', serveBookPage)
 router.get('/getBookData/:book_name', getBookData)
+router.get('/book-icons/:image_name', sendImage)
 
 module.exports = router

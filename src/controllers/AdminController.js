@@ -42,9 +42,11 @@ const newUserAttempt = async(req, res) => {
 }
 
 const newBook = async(req, res) => {
-    const book = req.body.title
-    const file = req.file
-    console.log('request for new book: ', book, JSON.stringify(file))
+    const book = req.body
+    const image = req.file
+    console.log(JSON.stringify(image.filename))
+    console.log('request for new book: ', JSON.stringify(book))
+    book.image_name = image.filename;
     await bookServices.addBook(book)
     res.send(true)
 }
@@ -61,8 +63,8 @@ const serveNewBook = async(req, res) => {
 }
 
 router.post('/new_user_attempt', newUserAttempt)
-router.get('/new-book', upload.single('image'), serveNewBook)
-router.post('/new-book-data', newBook)
+router.get('/new-book', serveNewBook)
+router.post('/new-book-data', upload.single('image'), newBook)
 router.post('/delete-book', deleteBook)
 
 module.exports = router
