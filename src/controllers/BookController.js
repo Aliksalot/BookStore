@@ -12,18 +12,25 @@ const serveBookPage = (req, res) => {
 }
 
 const getBookData = async(req, res) => {
-    const name = req.params.book_name
-    console.log(`requesting book title: ${name}`)
-    const books = await bookServices.getBooks({name: name})
-    const book = books[0]
-    console.log(book)
-    res.send(book === undefined ? {} : book)
+    try{    
+        const name = req.params.book_name
+        console.log(`requesting book title: ${name}`)
+        const books = await bookServices.getBooks({name: name})
+        const book = books[0]
+        console.log(book)
+        res.send(book === undefined ? {} : book)
+    }catch(e){
+        console.log(e)
+        res.send({})
+    }
+    
+    
 }
 
 const sendImage = async(req, res) => {
     const imageName = req.params.image_name;
     console.log('request for image: ', imageName)
-    const pathToImage = `.../uploads/${imageName}`
+    const pathToImage = path.join(__dirname, `../uploads/${imageName}`);
     console.log(pathToImage)
     res.sendFile(pathToImage)
 }

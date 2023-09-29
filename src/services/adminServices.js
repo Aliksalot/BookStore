@@ -35,6 +35,7 @@ const tryLogin = async(username, passwordAttempt) => {
     })
 }
 
+
 module.exports = {
     newUser,
     tryLogin

@@ -19,9 +19,15 @@ const getBooks = async(filter) => {
     })
 } 
 
+const deleteAllBooks = async() => {
+    const collection = await getCollection(collectionName);
+    collection.deleteMany();   
+}
+
 
 module.exports = {
     addBook,
     deleteBook,
-    getBooks
+    getBooks,
+    deleteAllBooks
 }

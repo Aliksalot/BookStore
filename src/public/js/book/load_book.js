@@ -9,7 +9,7 @@ const loadBook = async() => {
         return document.getElementById(id)
     }
 
-    getById('book-image').src = (book.image === undefined ? "../images/book-stock-icon" : book.image)
+    getById('book-image').src = (book.image_name === undefined ? "../images/book-stock-icon" : `/book/book-icons/${book.image_name}`)
     getById('book-title').textContent = book.name
     getById('author').textContent += book.author
     getById('genre').textContent += book.genre
