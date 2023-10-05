@@ -42,3 +42,14 @@
     top: 4%;
     left: 50%
 }
+
+#no-cart {
+    position: relative;
+    font-size: large;
+    color: black;
+    left:35%;
+    top: 30px;
+    z-index: 9999;
+    width: fit-content;
+    height: 100px;
+}

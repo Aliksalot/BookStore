@@ -28,6 +28,13 @@ app.use('/book/', book_controller)
 const admin_controller = require('./src/controllers/AdminController')
 app.use('/admin/', admin_controller)
 
+const cart_controller = require('./src/controllers/CartController')
+app.use('/cart/', cart_controller)
+
+const minutes5 = 1000 * 60 * 5
+const cartServices = require('./src/services/cartServices')
+setInterval(cartServices.sanitize, minutes5)
+
 app.listen(port, () => {
     console.log(`Server starting on ${port}`)
 })

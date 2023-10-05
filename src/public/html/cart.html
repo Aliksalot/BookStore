@@ -15,12 +15,18 @@
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 </head>
-<body onload = 'load_header()'>
+<body onload = 'load_header(); loadCart()'>
     <div class="main">
+
+
+
+        <div id = 'no-cart'>
+            No cart in session! 
+        </div>
 
         <div id = 'books'>
             <section class="book-section">
-                <a href="" class=""><img src="" alt="" class="book-image"></a>
+                <a href="" class="book-link"><img src="" alt="" class="book-image"></a>
                 <p class="book-title">adjasoodsao book tittle lmao</p>
                 <button class="add-to-cart" style = 'background-image: url("../images/trash-can");'></button>
                 <p class="genre-author-p">asdsddddddddddddddddddddddddddddddddddddddddddddddsa</p>
@@ -28,7 +34,8 @@
             </section>
         </div>
         
-        <section class = 'finish-section'>
+        <section id = 'finish-section' class = 'finish-section'>
+            <span></span>
             <button class = 'delete-button'>Delete cart</button>
             <button class = 'buy-button'>Finish order</button>            
         </section>
@@ -38,3 +45,5 @@
 
 <script src = '../js/load_header.js'></script>
 <script src = '../js/redirect_for_header.js'></script>
+<script src="../js/cart/load_cart.js"></script>
+<script src="../js/cart/cartInLocal.js"></script>
